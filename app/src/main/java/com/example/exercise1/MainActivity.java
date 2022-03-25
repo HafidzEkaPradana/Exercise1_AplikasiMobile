@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //set isi nama dan password yang benar
                 String namaSet = "hafidz";
-                String passwordSet = "hafidz2022";
+                String passwordSet = "hafidz99";
 
                 //memasukkan input user kedalam nama dan password
                 nama = inputNama.getText().toString();
@@ -72,10 +72,10 @@ public class MainActivity extends AppCompatActivity {
                         b.putString("a", nama.trim());
                         b.putString("b", password.trim());
 
-                        //membuat object indent berpindah activity dari mainactivity ke activityhasil
+                        //membuat object indent berpindah activity dari mainactivity ke Mainhome
                         Intent i = new Intent(getApplicationContext(), MainHomeActivity.class);
 
-                        //memasukkan bundle ke dalam intent untuk dikirimkan ke activityHasil
+                        //memasukkan bundle ke dalam intent untuk dikirimkan ke MainHome
                         i.putExtras(b);
                         startActivity(i);
                     }else if(nama.equals(namaSet)){

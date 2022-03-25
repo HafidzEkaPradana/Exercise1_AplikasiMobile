@@ -13,6 +13,7 @@
     <string name="ePassword">Masukkan Password</string>
     <string name="eRePassword">Masukkan Password</string>
     <string name="txBtRegister">REGISTER</string>
+    <string name="labelRegister">Register</string>
     <string name="labelSelamat">Selamat Datang </string>
     <string name="mLogout">Logout</string>
     <string name="lTask">Task</string>

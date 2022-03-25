@@ -7,8 +7,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainHomeActivity extends AppCompatActivity {
+
+    EditText edtTask, edtJenistask, edtTimetask;
+    FloatingActionButton fab;
+
+    TextView namaSelamat;
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -34,7 +43,9 @@ public class MainHomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_home);
 
         Bundle bundle =getIntent().getExtras();
-        String displayNama = bundle.getString("a");
+        //String displayNama = bundle.getString("a");
+
+        //namaSelamat.setText(displayNama);
 
     }
 }
