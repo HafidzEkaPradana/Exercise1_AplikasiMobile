@@ -62,7 +62,7 @@
         app:layout_constraintVertical_bias="0.375" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edNama"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="233dp"
         android:layout_height="50dp"
@@ -79,7 +79,7 @@
         app:layout_constraintVertical_bias="0.217" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edPassword"
         android:layout_width="233dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -95,7 +95,7 @@
         app:layout_constraintVertical_bias="0.472" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btSignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txBtSignin"
