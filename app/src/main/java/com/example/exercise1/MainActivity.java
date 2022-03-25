@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //set isi nama dan password yang benar
-                String namaSet = "hafidzekapradana";
+                String namaSet = "hafidz";
                 String passwordSet = "hafidz2022";
 
                 //memasukkan input user kedalam nama dan password

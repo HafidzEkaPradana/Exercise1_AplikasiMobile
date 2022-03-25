@@ -12,7 +12,6 @@
 
         <activity
             android:name=".MainHomeActivity"
-            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"

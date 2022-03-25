@@ -14,5 +14,12 @@
     <string name="eRePassword">Masukkan Password</string>
     <string name="txBtRegister">REGISTER</string>
     <string name="labelSelamat">Selamat Datang </string>
+    <string name="mLogout">Logout</string>
+    <string name="lTask">Task</string>
+    <string name="lJenis">Jenis Task</string>
+    <string name="lTimeTask">Time Task</string>
+    <string name="eTask">Masukkan Task</string>
+    <string name="eJenis">Masukkan Jenis Task</string>
+    <string name="eTime">Masukkan Time Task</string>
 
 </resources>
