@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     //deklarasi variable untuk menyimpan nama dan password register
     String namaReg, passwordReg;
 
+    View registerLabel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,14 +38,23 @@ public class MainActivity extends AppCompatActivity {
         //Menghubungkan variable epassword dengan component pada layout
         inputPassword=findViewById(R.id.edPassword);
 
+        registerLabel=findViewById(R.id.labelRegister);
+
+
+        registerLabel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), RegisterActivity.class);
+                startActivity(i);
+            }
+        });
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //set isi nama dan password yang benar
-                //String namaSet = "hafaidzekapradan";
-                //String passwordSet = "hafidz2022";
-
-
+                String namaSet = "hafidzekapradana";
+                String passwordSet = "hafidz2022";
 
                 //memasukkan input user kedalam nama dan password
                 nama = inputNama.getText().toString();
@@ -53,15 +64,12 @@ public class MainActivity extends AppCompatActivity {
                     Toast t =Toast.makeText(getApplicationContext(),"Nama dan Password wajib diisi", Toast.LENGTH_LONG);
                     t.show();
                 }else{
-                    if(nama.equals(namaReg) && password.equals(passwordReg)){
+                    if(nama.equals(namaSet) && password.equals(passwordSet)){
                         Toast t = Toast.makeText(getApplicationContext(), "Login Sukses",Toast.LENGTH_LONG);
                         t.show();
                         Bundle b = new Bundle();
 
                         b.putString("a", nama.trim());
-                        //memasukkan value dari variable nama dengan kunci "b"
-                        //dan dimasukkan dibundle
-
                         b.putString("b", password.trim());
 
                         //membuat object indent berpindah activity dari mainactivity ke activityhasil
@@ -69,8 +77,16 @@ public class MainActivity extends AppCompatActivity {
 
                         //memasukkan bundle ke dalam intent untuk dikirimkan ke activityHasil
                         i.putExtras(b);
-                        //berpindah ke ActivityHasil
                         startActivity(i);
+                    }else if(nama.equals(namaSet)){
+                        Toast t = Toast.makeText(getApplicationContext(), "Password Salah",Toast.LENGTH_LONG);
+                        t.show();
+                    }else if(password.equals(passwordSet)) {
+                        Toast t = Toast.makeText(getApplicationContext(), "Nama Salah", Toast.LENGTH_LONG);
+                        t.show();
+                    }else{
+                        Toast t = Toast.makeText(getApplicationContext(), "Nama dan Password Salah", Toast.LENGTH_LONG);
+                        t.show();
                     }
                 }
 

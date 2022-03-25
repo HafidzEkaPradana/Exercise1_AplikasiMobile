@@ -5,12 +5,14 @@
     <string name="txNama">Nama</string>
     <string name="txPassword">Password</string>
     <string name="txBtSignin">SIGN IN</string>
-    <string name="labelNew">New Todo App ?</string>
+    <string name="labelNew">Dont have an account ?</string>
     <string name="txRegister">Register</string>
     <string name="eNama">Masukkan Nama</string>
+    <string name="eEmail">Masukkan Email</string>
+    <string name="etEmail">Masukkan Email</string>
     <string name="ePassword">Masukkan Password</string>
     <string name="eRePassword">Masukkan Password</string>
-    <string name="eEmail">Masukkan Email</string>
     <string name="txBtRegister">REGISTER</string>
+    <string name="labelSelamat">Selamat Datang </string>
 
 </resources>
