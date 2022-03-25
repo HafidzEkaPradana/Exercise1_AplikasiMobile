@@ -7,17 +7,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainHomeActivity extends AppCompatActivity {
 
     EditText edtTask, edtJenistask, edtTimetask;
     FloatingActionButton fab;
-
-    TextView namaSelamat;
+    String task,jenistask,timetask;
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -42,10 +44,47 @@ public class MainHomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_home);
 
-        Bundle bundle =getIntent().getExtras();
-        //String displayNama = bundle.getString("a");
+        //namaSelamat = findViewById(R.id.tvNama);
 
-        //namaSelamat.setText(displayNama);
+        //Bundle bundle =getIntent().getExtras();
+        //String display = bundle.getString("c");
+        //namaSelamat.setText(display);
+
+        edtTask =findViewById(R.id.edTask);
+        edtJenistask = findViewById(R.id.edJenistask);
+        edtTimetask = findViewById(R.id.edTimetask);
+        fab = findViewById(R.id.fbSubmit);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                task = edtTask.getText().toString();
+                jenistask = edtJenistask.getText().toString();
+                timetask = edtTimetask.getText().toString();
+
+                if(task.isEmpty() || jenistask.isEmpty() || timetask.isEmpty()){
+                    Snackbar.make(view, "Semua data harus diisi",Snackbar.LENGTH_LONG).show();
+
+                }else{
+                    Toast.makeText(getApplicationContext(),"Task Berhasil Ditambah", Toast.LENGTH_LONG).show();
+
+                    Bundle b = new Bundle();
+                    b.putString("d",task.trim());
+                    b.putString("e", jenistask.trim());
+                    b.putString("f", timetask.trim());
+
+                    Intent i = new Intent(getApplicationContext(), TaskHasil.class);
+
+                    i.putExtras(b);
+                    startActivity(i);
+                }
+
+
+
+            }
+        });
 
     }
+
 }

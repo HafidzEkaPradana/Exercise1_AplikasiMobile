@@ -22,5 +22,8 @@
     <string name="eTask">Masukkan Task</string>
     <string name="eJenis">Masukkan Jenis Task</string>
     <string name="eTime">Masukkan Time Task</string>
+    <string name="textTask">Isi dari Task</string>
+    <string name="textJenis">Jenis dari Task</string>
+    <string name="textTime">Time dari Task</string>
 
 </resources>

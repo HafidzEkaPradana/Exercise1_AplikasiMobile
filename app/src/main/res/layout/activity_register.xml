@@ -38,6 +38,7 @@
         android:ems="10"
         android:gravity="center"
         android:hint="@string/eRePassword"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
         android:textColorHint="#D6D0D0"
@@ -66,26 +67,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:layout_constraintVertical_bias="0.132"
-        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
-
-    <EditText
-        android:id="@+id/edEmailReg"
-        android:layout_width="290sp"
-        android:layout_height="48sp"
-        android:background="@drawable/rounded_edittext"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/eEmail"
-        android:inputType="textPersonName"
-        android:textColor="#FFFFFFFF"
-        android:textColorHint="#D6D0D0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.296"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/edPassReg"
@@ -104,7 +87,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:layout_constraintVertical_bias="0.454"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/textView7"
@@ -120,5 +104,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.071" />
+
+    <EditText
+        android:id="@+id/edEmailReg"
+        android:layout_width="290sp"
+        android:layout_height="48sp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/etEmail"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D6D0D0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.303"
+        android:importantForAutofill="no" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

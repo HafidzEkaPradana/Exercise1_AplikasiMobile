@@ -9,14 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Exercise1">
-
+        <activity
+            android:name=".TaskHasil"
+            android:parentActivityName=".MainHomeActivity"
+            android:exported="false" />
         <activity
             android:name=".MainHomeActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

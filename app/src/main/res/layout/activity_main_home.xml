@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ini nama"
-        android:textColor="#05595B"
+        android:textColor="#E2D784"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.052" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/fbSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E2D784"
@@ -81,7 +81,7 @@
         app:layout_constraintVertical_bias="0.168" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/edTask"
         android:layout_width="290sp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -110,7 +110,7 @@
         app:layout_constraintVertical_bias="0.325" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/edJenistask"
         android:layout_width="290sp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -140,7 +140,7 @@
         app:layout_constraintVertical_bias="0.483" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/edTimetask"
         android:layout_width="290sp"
         android:layout_height="wrap_content"
         android:ems="10"
